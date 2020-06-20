@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8C2206EB249E4E950069EC0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2206EA249E4E950069EC0B /* AppDelegate.swift */; };
 		8C2206ED249E4E950069EC0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2206EC249E4E950069EC0B /* SceneDelegate.swift */; };
-		8C2206EF249E4E950069EC0B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2206EE249E4E950069EC0B /* StartViewController.swift */; };
 		8C2206F2249E4E950069EC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2206F0249E4E950069EC0B /* Main.storyboard */; };
 		8C2206F4249E4E990069EC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2206F3249E4E990069EC0B /* Assets.xcassets */; };
 		8C2206F7249E4E990069EC0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2206F5249E4E990069EC0B /* LaunchScreen.storyboard */; };
@@ -25,7 +24,6 @@
 		8C2206E7249E4E950069EC0B /* FirstParsingJsonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstParsingJsonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2206EA249E4E950069EC0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C2206EC249E4E950069EC0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C2206EE249E4E950069EC0B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8C2206F1249E4E950069EC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C2206F3249E4E990069EC0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2206F6249E4E990069EC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,25 +66,13 @@
 		8C2206E9249E4E950069EC0B /* FirstParsingJsonApp */ = {
 			isa = PBXGroup;
 			children = (
-				8C2206FE249E4ECB0069EC0B /* ViewControllers */,
+				8C9E5726249ED87F00B37AA9 /* ViewControllers */,
 				8C2206FF249E4EE40069EC0B /* Models */,
 				8C220700249E4EF80069EC0B /* Storyboards */,
 				8C220701249E4F0D0069EC0B /* Sourse */,
 				8C220702249E4F1F0069EC0B /* SupportingFiles */,
 			);
 			path = FirstParsingJsonApp;
-			sourceTree = "<group>";
-		};
-		8C2206FE249E4ECB0069EC0B /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				8C2206EE249E4E950069EC0B /* StartViewController.swift */,
-				8C220703249E7E1B0069EC0B /* CharactersTableViewController.swift */,
-				8C220705249E7E500069EC0B /* PlanetsTableViewController.swift */,
-				8C220707249E92760069EC0B /* CharacterViewController.swift */,
-				8C220709249E92890069EC0B /* PlanetViewController.swift */,
-			);
-			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		8C2206FF249E4EE40069EC0B /* Models */ = {
@@ -123,6 +109,17 @@
 				8C2206F8249E4E990069EC0B /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8C9E5726249ED87F00B37AA9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C220703249E7E1B0069EC0B /* CharactersTableViewController.swift */,
+				8C220705249E7E500069EC0B /* PlanetsTableViewController.swift */,
+				8C220707249E92760069EC0B /* CharacterViewController.swift */,
+				8C220709249E92890069EC0B /* PlanetViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C220708249E92760069EC0B /* CharacterViewController.swift in Sources */,
-				8C2206EF249E4E950069EC0B /* StartViewController.swift in Sources */,
 				8C22070A249E92890069EC0B /* PlanetViewController.swift in Sources */,
 				8C220704249E7E1B0069EC0B /* CharactersTableViewController.swift in Sources */,
 				8C22070E249EB4C90069EC0B /* Characters.swift in Sources */,
