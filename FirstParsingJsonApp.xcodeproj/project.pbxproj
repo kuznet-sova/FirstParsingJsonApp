@@ -17,6 +17,8 @@
 		8C220706249E7E500069EC0B /* PlanetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C220705249E7E500069EC0B /* PlanetsTableViewController.swift */; };
 		8C220708249E92760069EC0B /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C220707249E92760069EC0B /* CharacterViewController.swift */; };
 		8C22070A249E92890069EC0B /* PlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C220709249E92890069EC0B /* PlanetViewController.swift */; };
+		8C22070C249EAEBC0069EC0B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C22070B249EAEBC0069EC0B /* Character.swift */; };
+		8C22070E249EB4C90069EC0B /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C22070D249EB4C90069EC0B /* Characters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		8C220705249E7E500069EC0B /* PlanetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewController.swift; sourceTree = "<group>"; };
 		8C220707249E92760069EC0B /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		8C220709249E92890069EC0B /* PlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewController.swift; sourceTree = "<group>"; };
+		8C22070B249EAEBC0069EC0B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		8C22070D249EB4C90069EC0B /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 		8C2206FF249E4EE40069EC0B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8C22070B249EAEBC0069EC0B /* Character.swift */,
+				8C22070D249EB4C90069EC0B /* Characters.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,9 +200,11 @@
 				8C2206EF249E4E950069EC0B /* StartViewController.swift in Sources */,
 				8C22070A249E92890069EC0B /* PlanetViewController.swift in Sources */,
 				8C220704249E7E1B0069EC0B /* CharactersTableViewController.swift in Sources */,
+				8C22070E249EB4C90069EC0B /* Characters.swift in Sources */,
 				8C2206EB249E4E950069EC0B /* AppDelegate.swift in Sources */,
 				8C2206ED249E4E950069EC0B /* SceneDelegate.swift in Sources */,
 				8C220706249E7E500069EC0B /* PlanetsTableViewController.swift in Sources */,
+				8C22070C249EAEBC0069EC0B /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
