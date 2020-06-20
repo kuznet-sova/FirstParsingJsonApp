@@ -25,6 +25,14 @@ class CharactersTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow
+            else { return }
+        guard let characterView = segue.destination as? CharacterViewController
+            else { return }
+        characterView.character = character[indexPath.row]
+    }
 
     @IBAction func BackButton(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
