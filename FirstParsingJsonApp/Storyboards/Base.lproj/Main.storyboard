@@ -38,7 +38,7 @@
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <state key="normal" title="Go 🎮"/>
                                                         <connections>
-                                                            <segue destination="D48-pv-KRw" kind="presentation" modalPresentationStyle="fullScreen" id="nWC-tX-CgQ"/>
+                                                            <segue destination="Zfq-0Y-yhh" kind="show" id="5E3-F8-f1a"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -65,7 +65,7 @@
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <state key="normal" title="Go 🚀"/>
                                                         <connections>
-                                                            <segue destination="vqb-2q-f6p" kind="presentation" modalPresentationStyle="fullScreen" id="GVq-89-aE0"/>
+                                                            <segue destination="OOj-sS-W2n" kind="show" id="fQV-gZ-Kby"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -84,7 +84,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Borderlands 3" largeTitleDisplayMode="always" id="nxW-et-9Ih"/>
+                    <navigationItem key="navigationItem" title="Borderlands 3" largeTitleDisplayMode="always" id="nxW-et-9Ih">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ju9-IK-4PS"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,16 +136,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Characters" id="cSZ-Lv-xbL">
                         <barButtonItem key="backBarButtonItem" title="Back" id="8ai-rE-rUk"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.turn.up.left" catalog="system" id="hMk-Od-qag">
-                            <connections>
-                                <action selector="BackButton:" destination="Zfq-0Y-yhh" id="ZSn-ZK-O8Y"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yf4-Nc-toe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2780" y="-281.10944527736132"/>
+            <point key="canvasLocation" x="1878" y="-263"/>
         </scene>
         <!--Character View Controller-->
         <scene sceneID="XFV-53-xqZ">
@@ -201,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wky-qk-fK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3597.5999999999999" y="-281.10944527736132"/>
+            <point key="canvasLocation" x="2697" y="-263"/>
         </scene>
         <!--Planet View Controller-->
         <scene sceneID="9eg-1j-MaU">
@@ -260,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IF-7s-pZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3599" y="510"/>
+            <point key="canvasLocation" x="2697" y="502"/>
         </scene>
         <!--Locations-->
         <scene sceneID="bh6-Py-XgZ">
@@ -308,7 +305,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="az1-2O-rSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5226" y="510"/>
+            <point key="canvasLocation" x="4297" y="502"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="ErK-bs-k5j">
@@ -340,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGg-ha-NTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6014" y="510"/>
+            <point key="canvasLocation" x="5105" y="501"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Efk-S3-bY3">
@@ -356,7 +353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7Z-Rd-Bwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4417" y="510"/>
+            <point key="canvasLocation" x="3489" y="502"/>
         </scene>
         <!--Planets-->
         <scene sceneID="SeN-uY-tb9">
@@ -395,48 +392,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Planets" id="xAg-0r-Omi">
                         <barButtonItem key="backBarButtonItem" title="Back" id="17b-du-uSI"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.turn.up.left" catalog="system" id="f3u-pb-qbr">
-                            <connections>
-                                <action selector="BackButton:" destination="OOj-sS-W2n" id="CTs-tv-5v7"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeM-ae-v9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2780" y="509.59520239880067"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="wR1-sH-wDP">
-            <objects>
-                <navigationController id="vqb-2q-f6p" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sy5-w2-RXO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="OOj-sS-W2n" kind="relationship" relationship="rootViewController" destinationCreationSelector="planets" id="ShY-XR-mvl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjb-Xy-YdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1948" y="509.59520239880067"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Odt-Yb-QYa">
-            <objects>
-                <navigationController id="D48-pv-KRw" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JDe-Ut-uoP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Zfq-0Y-yhh" kind="relationship" relationship="rootViewController" destinationCreationSelector="characters" id="TMP-ls-Cfr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gur-EH-7IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1948" y="-281.10944527736132"/>
+            <point key="canvasLocation" x="1878" y="502"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1U3-IT-yB2">

@@ -64,8 +64,15 @@ class LocationsTableViewController: UITableViewController {
         var locationsList = [Location]()
         
         for index in 0 ..< locations.count {
-            let availabilityName = locations[index].tags?.contains(planetName.lowercased().replacingOccurrences(of: " ", with: "-", options: .literal, range: nil)
-)
+            let availabilityName = locations[index].tags?.contains(
+                planetName
+                    .lowercased()
+                    .replacingOccurrences(
+                        of: " ",
+                        with: "-",
+                        options: .literal,
+                        range: nil)
+            )
             
             if locations[index].type == "picture"
                 && availabilityName == true {
