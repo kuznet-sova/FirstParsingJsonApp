@@ -23,7 +23,7 @@ class PlanetViewController: UIViewController {
         planetNameLabel.text = planet.namePlanet
         planetDescriptionLabel.text = planet.descriptionPlanet
     }
-    
+      
     private func getPlanetImage() {
         guard let imageUrl = URL(string: planet.imageUrl) else { return }
         

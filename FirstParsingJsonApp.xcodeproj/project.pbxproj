@@ -22,6 +22,7 @@
 		8C321993249F58F7006065E1 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321992249F58F7006065E1 /* Planet.swift */; };
 		8C321995249F5DA8006065E1 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321994249F5DA8006065E1 /* LocationsTableViewController.swift */; };
 		8C321997249F5DCC006065E1 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321996249F5DCC006065E1 /* LocationViewController.swift */; };
+		8C321999249F81C6006065E1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321998249F81C5006065E1 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		8C321992249F58F7006065E1 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		8C321994249F5DA8006065E1 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 		8C321996249F5DCC006065E1 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		8C321998249F81C5006065E1 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				8C22070D249EB4C90069EC0B /* Characters.swift */,
 				8C321990249F58E4006065E1 /* Planets.swift */,
 				8C321992249F58F7006065E1 /* Planet.swift */,
+				8C321998249F81C5006065E1 /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				8C321997249F5DCC006065E1 /* LocationViewController.swift in Sources */,
 				8C220704249E7E1B0069EC0B /* CharactersTableViewController.swift in Sources */,
 				8C22070E249EB4C90069EC0B /* Characters.swift in Sources */,
+				8C321999249F81C6006065E1 /* Location.swift in Sources */,
 				8C2206EB249E4E950069EC0B /* AppDelegate.swift in Sources */,
 				8C2206ED249E4E950069EC0B /* SceneDelegate.swift in Sources */,
 				8C220706249E7E500069EC0B /* PlanetsTableViewController.swift in Sources */,

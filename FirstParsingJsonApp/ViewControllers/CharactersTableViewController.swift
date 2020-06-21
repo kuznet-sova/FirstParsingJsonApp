@@ -10,7 +10,7 @@ import UIKit
 
 class CharactersTableViewController: UITableViewController {
     
-    var character = Character.getCharacter()
+    var characters = Character.getCharacter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +19,15 @@ class CharactersTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return character.count
+        return characters.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "character", for: indexPath)
         
-        cell.textLabel?.text = character[indexPath.row].nameCharacter
-        cell.detailTextLabel?.text = character[indexPath.row].classCharacter
-        cell.imageView?.image = UIImage(named: character[indexPath.row].nameCharacter)
+        cell.textLabel?.text = characters[indexPath.row].nameCharacter
+        cell.detailTextLabel?.text = characters[indexPath.row].classCharacter
+        cell.imageView?.image = UIImage(named: characters[indexPath.row].nameCharacter)
 
         return cell
     }
@@ -37,7 +37,7 @@ class CharactersTableViewController: UITableViewController {
             else { return }
         guard let characterView = segue.destination as? CharacterViewController
             else { return }
-        characterView.character = character[indexPath.row]
+        characterView.character = characters[indexPath.row]
     }
 
     @IBAction func BackButton(_ sender: UIBarButtonItem) {
