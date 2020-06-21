@@ -35,6 +35,14 @@ class LocationsTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow
+        else { return }
+        guard let locationView = segue.destination as? LocationViewController
+            else { return }
+        locationView.location = locations[indexPath.row]
+    }
+    
     func fetchData() {
         guard let url = URL(string: locationsUrl) else { return }
         
