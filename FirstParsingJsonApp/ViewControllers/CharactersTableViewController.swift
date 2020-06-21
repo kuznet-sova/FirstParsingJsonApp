@@ -11,6 +11,12 @@ import UIKit
 class CharactersTableViewController: UITableViewController {
     
     var character = Character.getCharacter()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.rowHeight = 90
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return character.count

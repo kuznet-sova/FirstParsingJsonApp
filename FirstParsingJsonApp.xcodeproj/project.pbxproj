@@ -18,6 +18,10 @@
 		8C22070A249E92890069EC0B /* PlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C220709249E92890069EC0B /* PlanetViewController.swift */; };
 		8C22070C249EAEBC0069EC0B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C22070B249EAEBC0069EC0B /* Character.swift */; };
 		8C22070E249EB4C90069EC0B /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C22070D249EB4C90069EC0B /* Characters.swift */; };
+		8C321991249F58E4006065E1 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321990249F58E4006065E1 /* Planets.swift */; };
+		8C321993249F58F7006065E1 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321992249F58F7006065E1 /* Planet.swift */; };
+		8C321995249F5DA8006065E1 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321994249F5DA8006065E1 /* LocationsTableViewController.swift */; };
+		8C321997249F5DCC006065E1 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321996249F5DCC006065E1 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		8C220709249E92890069EC0B /* PlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewController.swift; sourceTree = "<group>"; };
 		8C22070B249EAEBC0069EC0B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		8C22070D249EB4C90069EC0B /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		8C321990249F58E4006065E1 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		8C321992249F58F7006065E1 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		8C321994249F5DA8006065E1 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
+		8C321996249F5DCC006065E1 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 			children = (
 				8C22070B249EAEBC0069EC0B /* Character.swift */,
 				8C22070D249EB4C90069EC0B /* Characters.swift */,
+				8C321990249F58E4006065E1 /* Planets.swift */,
+				8C321992249F58F7006065E1 /* Planet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 				8C220705249E7E500069EC0B /* PlanetsTableViewController.swift */,
 				8C220707249E92760069EC0B /* CharacterViewController.swift */,
 				8C220709249E92890069EC0B /* PlanetViewController.swift */,
+				8C321994249F5DA8006065E1 /* LocationsTableViewController.swift */,
+				8C321996249F5DCC006065E1 /* LocationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,14 +205,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C321995249F5DA8006065E1 /* LocationsTableViewController.swift in Sources */,
 				8C220708249E92760069EC0B /* CharacterViewController.swift in Sources */,
 				8C22070A249E92890069EC0B /* PlanetViewController.swift in Sources */,
+				8C321997249F5DCC006065E1 /* LocationViewController.swift in Sources */,
 				8C220704249E7E1B0069EC0B /* CharactersTableViewController.swift in Sources */,
 				8C22070E249EB4C90069EC0B /* Characters.swift in Sources */,
 				8C2206EB249E4E950069EC0B /* AppDelegate.swift in Sources */,
 				8C2206ED249E4E950069EC0B /* SceneDelegate.swift in Sources */,
 				8C220706249E7E500069EC0B /* PlanetsTableViewController.swift in Sources */,
 				8C22070C249EAEBC0069EC0B /* Character.swift in Sources */,
+				8C321991249F58E4006065E1 /* Planets.swift in Sources */,
+				8C321993249F58F7006065E1 /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

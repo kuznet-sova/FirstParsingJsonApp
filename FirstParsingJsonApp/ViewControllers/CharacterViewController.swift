@@ -12,8 +12,8 @@ class CharacterViewController: UIViewController {
 
     @IBOutlet var characterImageViev: UIImageView!
     @IBOutlet var characterNameLabel: UILabel!
-    @IBOutlet var charactersClassLabel: UILabel!
-    @IBOutlet var charactersDescriptionLabel: UILabel!
+    @IBOutlet var characterClassLabel: UILabel!
+    @IBOutlet var characterDescriptionLabel: UILabel!
     
     var character: Character!
     
@@ -22,8 +22,8 @@ class CharacterViewController: UIViewController {
         
         getCharacterImage()
         characterNameLabel.text = character.nameCharacter
-        charactersClassLabel.text = "Class: \(character.classCharacter)"
-        charactersDescriptionLabel.text = character.descriptionCharacter
+        characterClassLabel.text = "Class: \(character.classCharacter)"
+        characterDescriptionLabel.text = character.descriptionCharacter
     }
     
     private func getCharacterImage() {

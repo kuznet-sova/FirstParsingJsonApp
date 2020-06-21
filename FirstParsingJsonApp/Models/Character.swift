@@ -11,7 +11,6 @@ struct Character {
     let classCharacter: String
     let descriptionCharacter: String
     let imageUrl: String
-    
 }
 
 extension Character {
@@ -28,7 +27,6 @@ extension Character {
                 )
             )
         }
-
         return charactersList
     }
 }

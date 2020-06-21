@@ -10,21 +10,29 @@ import UIKit
 
 class PlanetViewController: UIViewController {
 
+    @IBOutlet var planetImageViev: UIImageView!
+    @IBOutlet var planetNameLabel: UILabel!
+    @IBOutlet var planetDescriptionLabel: UILabel!
+    
+    var planet: Planet!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        getPlanetImage()
+        planetNameLabel.text = planet.namePlanet
+        planetDescriptionLabel.text = planet.descriptionPlanet
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func getPlanetImage() {
+        guard let imageUrl = URL(string: planet.imageUrl) else { return }
+        
+        URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
+            if let data = data, let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.planetImageViev.image = image
+                }
+            }
+        }.resume()
     }
-    */
-
 }
