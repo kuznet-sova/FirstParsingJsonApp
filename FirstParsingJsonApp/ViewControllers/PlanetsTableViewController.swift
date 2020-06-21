@@ -38,8 +38,4 @@ class PlanetsTableViewController: UITableViewController {
             else { return }
         planetView.planet = planets[indexPath.row]
     }
-
-    @IBAction func BackButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
-    }
 }

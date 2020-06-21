@@ -39,8 +39,4 @@ class CharactersTableViewController: UITableViewController {
             else { return }
         characterView.character = characters[indexPath.row]
     }
-
-    @IBAction func BackButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
-    }
 }
