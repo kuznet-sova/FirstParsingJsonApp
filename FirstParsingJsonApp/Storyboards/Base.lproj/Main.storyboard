@@ -296,7 +296,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Locations" id="yfp-80-hGm">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Zgr-rn-5Ea"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.turn.up.left" catalog="system" id="1hk-oC-2zR">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="chevron.left" catalog="system" id="1hk-oC-2zR">
                             <connections>
                                 <action selector="BackButton:" destination="crJ-Dv-WA1" id="G9Q-fj-SCR"/>
                             </connections>
@@ -328,16 +328,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1OF-ED-85F"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4f2-YO-NWX">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="kOW-yk-MN0"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="4f2-YO-NWX"/>
                     <connections>
                         <outlet property="locationImageViev" destination="Xfv-Mt-Mwa" id="c5I-nA-c87"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGg-ha-NTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5105" y="501"/>
+            <point key="canvasLocation" x="5097" y="501"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Efk-S3-bY3">
@@ -418,8 +416,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
         <image name="characters" width="209" height="209"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="planets" width="209" height="209"/>
     </resources>
 </document>
