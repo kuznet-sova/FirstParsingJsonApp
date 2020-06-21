@@ -336,6 +336,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Efk-S3-bY3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7Z-Rd-Bwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="AXv-nG-u5p" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qPd-5h-bp6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -345,7 +346,6 @@
                         <segue destination="crJ-Dv-WA1" kind="relationship" relationship="rootViewController" id="Xnd-hc-mZ8"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C7Z-Rd-Bwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4417" y="510"/>
         </scene>
@@ -399,6 +399,7 @@
         <!--Navigation Controller-->
         <scene sceneID="wR1-sH-wDP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjb-Xy-YdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="vqb-2q-f6p" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sy5-w2-RXO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
@@ -408,13 +409,13 @@
                         <segue destination="OOj-sS-W2n" kind="relationship" relationship="rootViewController" destinationCreationSelector="planets" id="ShY-XR-mvl"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjb-Xy-YdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1948" y="509.59520239880067"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Odt-Yb-QYa">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gur-EH-7IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="D48-pv-KRw" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JDe-Ut-uoP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
@@ -424,7 +425,6 @@
                         <segue destination="Zfq-0Y-yhh" kind="relationship" relationship="rootViewController" destinationCreationSelector="characters" id="TMP-ls-Cfr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gur-EH-7IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1948" y="-281.10944527736132"/>
         </scene>

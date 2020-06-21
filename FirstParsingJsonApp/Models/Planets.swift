@@ -12,7 +12,7 @@ struct Planets {
         "Eden-6",
         "Gehenna",
         "Nekrotafeyo",
-        "The Handsome Jackpot",
+        "Handsome Jackpot",
         "Pandora",
         "Promethea",
         "Xylourgos"

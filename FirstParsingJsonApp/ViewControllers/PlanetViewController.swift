@@ -23,6 +23,13 @@ class PlanetViewController: UIViewController {
         planetNameLabel.text = planet.namePlanet
         planetDescriptionLabel.text = planet.descriptionPlanet
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let navigationController = segue.destination as? UINavigationController,
+            let locationsView = navigationController.topViewController as? LocationsTableViewController
+            else { return }
+        locationsView.planetName = planetNameLabel.text
+    }
       
     private func getPlanetImage() {
         guard let imageUrl = URL(string: planet.imageUrl) else { return }

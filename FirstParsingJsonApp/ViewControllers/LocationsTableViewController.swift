@@ -12,6 +12,7 @@ class LocationsTableViewController: UITableViewController {
     
     private let locationsUrl = "https://borderlands.com/en-US/data-media-items/index.json"
     var locations: [Location] = []
+    var planetName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,6 @@ class LocationsTableViewController: UITableViewController {
         tableView.rowHeight = 60
         fetchData()
     }
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         locations.count
@@ -53,11 +53,33 @@ class LocationsTableViewController: UITableViewController {
 
             do {
                 self.locations = try decoder.decode([Location].self, from: data)
+                self.filteringLocations()
             } catch let error {
                 print(error.localizedDescription)
             }
-            
         }.resume()
+    }
+    
+    func filteringLocations() {
+        var locationsList = [Location]()
+        
+        for index in 0 ..< locations.count {
+            let availabilityName = locations[index].tags?.contains(planetName.lowercased().replacingOccurrences(of: " ", with: "-", options: .literal, range: nil)
+)
+            
+            if locations[index].type == "picture"
+                && availabilityName == true {
+                locationsList.append (
+                    Location (
+                        slug: locations[index].slug,
+                        type: locations[index].type,
+                        tags: locations[index].tags,
+                        imageURL: locations[index].imageURL
+                    )
+                )
+            }
+        }
+        self.locations = locationsList
     }
 
     @IBAction func BackButton(_ sender: UIBarButtonItem) {
