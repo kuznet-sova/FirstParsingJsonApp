@@ -54,6 +54,9 @@ class LocationsTableViewController: UITableViewController {
             do {
                 self.locations = try decoder.decode([Location].self, from: data)
                 self.filteringLocations()
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } catch let error {
                 print(error.localizedDescription)
             }

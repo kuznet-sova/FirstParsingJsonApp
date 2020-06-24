@@ -24,7 +24,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vn9-ih-5Gb" secondAttribute="trailing" id="0Hd-fG-cQ1"/>
                             <constraint firstItem="Vn9-ih-5Gb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bT9-1c-TNF"/>
                             <constraint firstItem="Vn9-ih-5Gb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hLO-VA-Lix"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vn9-ih-5Gb" secondAttribute="bottom" id="pTN-4h-1Dz"/>
+                            <constraint firstAttribute="bottom" secondItem="Vn9-ih-5Gb" secondAttribute="bottom" id="pTN-4h-1Dz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

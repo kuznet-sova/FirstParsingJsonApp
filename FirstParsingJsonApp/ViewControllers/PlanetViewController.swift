@@ -14,6 +14,8 @@ class PlanetViewController: UIViewController {
     @IBOutlet var planetNameLabel: UILabel!
     @IBOutlet var planetDescriptionLabel: UILabel!
     
+    private var spinnerView: UIActivityIndicatorView?
+    
     var planet: Planet!
     
     override func viewDidLoad() {
@@ -22,6 +24,7 @@ class PlanetViewController: UIViewController {
         getPlanetImage()
         planetNameLabel.text = planet.namePlanet
         planetDescriptionLabel.text = planet.descriptionPlanet
+        spinnerView = showSpinner(in: planetImageViev)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,9 +40,22 @@ class PlanetViewController: UIViewController {
         URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
             if let data = data, let image = UIImage(data: data) {
                 DispatchQueue.main.async {
+                    self.spinnerView?.stopAnimating()
                     self.planetImageViev.image = image
                 }
             }
         }.resume()
+    }
+    
+    private func showSpinner(in view: UIView) -> UIActivityIndicatorView {
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator.color = .gray
+        activityIndicator.startAnimating()
+        activityIndicator.center = planetImageViev.center
+        activityIndicator.hidesWhenStopped = true
+        
+        view.addSubview(activityIndicator)
+        
+        return activityIndicator
     }
 }

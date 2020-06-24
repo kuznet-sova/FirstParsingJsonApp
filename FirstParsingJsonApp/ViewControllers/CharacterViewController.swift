@@ -15,8 +15,10 @@ class CharacterViewController: UIViewController {
     @IBOutlet var characterClassLabel: UILabel!
     @IBOutlet var characterDescriptionLabel: UILabel!
     
-    var character: Character!
+    private var spinnerView: UIActivityIndicatorView?
     
+    var character: Character!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,7 @@ class CharacterViewController: UIViewController {
         characterNameLabel.text = character.nameCharacter
         characterClassLabel.text = "Class: \(character.classCharacter)"
         characterDescriptionLabel.text = character.descriptionCharacter
+        spinnerView = showSpinner(in: characterImageViev)
     }
     
     private func getCharacterImage() {
@@ -32,9 +35,22 @@ class CharacterViewController: UIViewController {
         URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
             if let data = data, let image = UIImage(data: data) {
                 DispatchQueue.main.async {
+                    self.spinnerView?.stopAnimating()
                     self.characterImageViev.image = image
                 }
             }
         }.resume()
+    }
+    
+    private func showSpinner(in view: UIView) -> UIActivityIndicatorView {
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator.color = .gray
+        activityIndicator.startAnimating()
+        activityIndicator.center = characterImageViev.center
+        activityIndicator.hidesWhenStopped = true
+        
+        view.addSubview(activityIndicator)
+        
+        return activityIndicator
     }
 }
