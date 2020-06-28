@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8C2206E7249E4E950069EC0B /* FirstParsingJsonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstParsingJsonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2206E7249E4E950069EC0B /* Borderlands3GameInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Borderlands3GameInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2206EA249E4E950069EC0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C2206EC249E4E950069EC0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8C2206F1249E4E950069EC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		8C2206DE249E4E950069EC0B = {
 			isa = PBXGroup;
 			children = (
-				8C2206E9249E4E950069EC0B /* FirstParsingJsonApp */,
+				8C2206E9249E4E950069EC0B /* Borderlands3GameInfo */,
 				8C2206E8249E4E950069EC0B /* Products */,
 				8C349DC924A7ED690033E3A9 /* Frameworks */,
 			);
@@ -74,12 +74,12 @@
 		8C2206E8249E4E950069EC0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C2206E7249E4E950069EC0B /* FirstParsingJsonApp.app */,
+				8C2206E7249E4E950069EC0B /* Borderlands3GameInfo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8C2206E9249E4E950069EC0B /* FirstParsingJsonApp */ = {
+		8C2206E9249E4E950069EC0B /* Borderlands3GameInfo */ = {
 			isa = PBXGroup;
 			children = (
 				8C9E5726249ED87F00B37AA9 /* ViewControllers */,
@@ -88,7 +88,7 @@
 				8C220701249E4F0D0069EC0B /* Sourse */,
 				8C220702249E4F1F0069EC0B /* SupportingFiles */,
 			);
-			path = FirstParsingJsonApp;
+			path = Borderlands3GameInfo;
 			sourceTree = "<group>";
 		};
 		8C2206FF249E4EE40069EC0B /* Models */ = {
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8C2206E6249E4E950069EC0B /* FirstParsingJsonApp */ = {
+		8C2206E6249E4E950069EC0B /* Borderlands3GameInfo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C2206FB249E4E990069EC0B /* Build configuration list for PBXNativeTarget "FirstParsingJsonApp" */;
+			buildConfigurationList = 8C2206FB249E4E990069EC0B /* Build configuration list for PBXNativeTarget "Borderlands3GameInfo" */;
 			buildPhases = (
 				8C2206E3249E4E950069EC0B /* Sources */,
 				8C2206E4249E4E950069EC0B /* Frameworks */,
@@ -167,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = FirstParsingJsonApp;
+			name = Borderlands3GameInfo;
 			productName = FirstParsingJsonApp;
-			productReference = 8C2206E7249E4E950069EC0B /* FirstParsingJsonApp.app */;
+			productReference = 8C2206E7249E4E950069EC0B /* Borderlands3GameInfo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8C2206E2249E4E950069EC0B /* Build configuration list for PBXProject "FirstParsingJsonApp" */;
+			buildConfigurationList = 8C2206E2249E4E950069EC0B /* Build configuration list for PBXProject "Borderlands3GameInfo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -200,7 +200,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8C2206E6249E4E950069EC0B /* FirstParsingJsonApp */,
+				8C2206E6249E4E950069EC0B /* Borderlands3GameInfo */,
 			);
 		};
 /* End PBXProject section */
@@ -382,13 +382,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G39AAW7HHA;
-				INFOPLIST_FILE = FirstParsingJsonApp/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = Borderlands3GameInfo/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.first.FirstParsingJsonApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.first.Borderlands3GameInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -401,13 +401,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G39AAW7HHA;
-				INFOPLIST_FILE = FirstParsingJsonApp/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = Borderlands3GameInfo/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.first.FirstParsingJsonApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.first.Borderlands3GameInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -417,7 +417,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8C2206E2249E4E950069EC0B /* Build configuration list for PBXProject "FirstParsingJsonApp" */ = {
+		8C2206E2249E4E950069EC0B /* Build configuration list for PBXProject "Borderlands3GameInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C2206F9249E4E990069EC0B /* Debug */,
@@ -426,7 +426,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C2206FB249E4E990069EC0B /* Build configuration list for PBXNativeTarget "FirstParsingJsonApp" */ = {
+		8C2206FB249E4E990069EC0B /* Build configuration list for PBXNativeTarget "Borderlands3GameInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C2206FC249E4E990069EC0B /* Debug */,
