@@ -23,6 +23,8 @@
 		8C321995249F5DA8006065E1 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321994249F5DA8006065E1 /* LocationsTableViewController.swift */; };
 		8C321997249F5DCC006065E1 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321996249F5DCC006065E1 /* LocationViewController.swift */; };
 		8C321999249F81C6006065E1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C321998249F81C5006065E1 /* Location.swift */; };
+		8C349DC824A7E4B30033E3A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C349DC724A7E4B30033E3A9 /* MainViewController.swift */; };
+		8C349DCB24A7ED6A0033E3A9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C349DCA24A7ED6A0033E3A9 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		8C321994249F5DA8006065E1 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 		8C321996249F5DCC006065E1 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		8C321998249F81C5006065E1 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8C349DC724A7E4B30033E3A9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8C349DCA24A7ED6A0033E3A9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C349DCB24A7ED6A0033E3A9 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 			children = (
 				8C2206E9249E4E950069EC0B /* FirstParsingJsonApp */,
 				8C2206E8249E4E950069EC0B /* Products */,
+				8C349DC924A7ED690033E3A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +130,14 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		8C349DC924A7ED690033E3A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C349DCA24A7ED6A0033E3A9 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8C9E5726249ED87F00B37AA9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +147,7 @@
 				8C220709249E92890069EC0B /* PlanetViewController.swift */,
 				8C321994249F5DA8006065E1 /* LocationsTableViewController.swift */,
 				8C321996249F5DCC006065E1 /* LocationViewController.swift */,
+				8C349DC724A7E4B30033E3A9 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -215,6 +230,7 @@
 				8C220704249E7E1B0069EC0B /* CharactersTableViewController.swift in Sources */,
 				8C22070E249EB4C90069EC0B /* Characters.swift in Sources */,
 				8C321999249F81C6006065E1 /* Location.swift in Sources */,
+				8C349DC824A7E4B30033E3A9 /* MainViewController.swift in Sources */,
 				8C2206EB249E4E950069EC0B /* AppDelegate.swift in Sources */,
 				8C2206ED249E4E950069EC0B /* SceneDelegate.swift in Sources */,
 				8C220706249E7E500069EC0B /* PlanetsTableViewController.swift in Sources */,

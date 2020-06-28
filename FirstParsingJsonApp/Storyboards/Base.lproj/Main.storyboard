@@ -8,6 +8,64 @@
     </dependencies>
     <scenes>
         <!--Borderlands 3-->
+        <scene sceneID="2Zs-YD-Nhs">
+            <objects>
+                <viewController id="lhL-1k-ert" customClass="MainViewController" customModule="FirstParsingJsonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mdo-JL-3jd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-58-Eyw">
+                                <rect key="frame" x="139.5" y="581" width="96" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Game info"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yl8-iM-bcw"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exs-nk-q8B">
+                                <rect key="frame" x="20" y="248" width="335" height="180"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="cLX-rQ-Rd3"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available now! Shoot and loot your way through a mayhem-fueled adventure." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg5-yd-KLW">
+                                <rect key="frame" x="20" y="126" width="335" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xg5-yd-KLW" firstAttribute="top" secondItem="sZV-F6-gsW" secondAttribute="top" constant="30" id="INa-Ul-FWh"/>
+                            <constraint firstItem="xg5-yd-KLW" firstAttribute="leading" secondItem="sZV-F6-gsW" secondAttribute="leading" constant="20" id="NuD-P0-omK"/>
+                            <constraint firstItem="exs-nk-q8B" firstAttribute="centerX" secondItem="Mdo-JL-3jd" secondAttribute="centerX" id="QSL-Nx-oMM"/>
+                            <constraint firstItem="sZV-F6-gsW" firstAttribute="trailing" secondItem="xg5-yd-KLW" secondAttribute="trailing" constant="20" id="RBl-GV-gC8"/>
+                            <constraint firstItem="sZV-F6-gsW" firstAttribute="trailing" secondItem="exs-nk-q8B" secondAttribute="trailing" constant="20" id="YAc-db-Mpe"/>
+                            <constraint firstItem="exs-nk-q8B" firstAttribute="top" secondItem="xg5-yd-KLW" secondAttribute="bottom" constant="50" id="gcm-iM-eFD"/>
+                            <constraint firstItem="exs-nk-q8B" firstAttribute="leading" secondItem="sZV-F6-gsW" secondAttribute="leading" constant="20" id="hR7-mY-L8j"/>
+                            <constraint firstItem="M8F-58-Eyw" firstAttribute="centerX" secondItem="Mdo-JL-3jd" secondAttribute="centerX" id="oZI-1j-8r8"/>
+                            <constraint firstItem="sZV-F6-gsW" firstAttribute="bottom" secondItem="M8F-58-Eyw" secondAttribute="bottom" constant="50" id="yXM-70-bNy"/>
+                            <constraint firstItem="exs-nk-q8B" firstAttribute="centerX" secondItem="Mdo-JL-3jd" secondAttribute="centerX" id="yYT-tj-3kB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sZV-F6-gsW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Borderlands 3" largeTitleDisplayMode="always" id="O9N-fH-hZH"/>
+                    <connections>
+                        <outlet property="startVideoWebView" destination="exs-nk-q8B" id="41q-nO-MBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xox-N9-tT1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264.80000000000001" y="104.7976011994003"/>
+        </scene>
+        <!--Borderlands 3-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstParsingJsonApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +142,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Borderlands 3" largeTitleDisplayMode="always" id="nxW-et-9Ih">
+                    <navigationItem key="navigationItem" title="Borderlands 3" id="nxW-et-9Ih">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ju9-IK-4PS"/>
                     </navigationItem>
                 </viewController>
@@ -263,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IF-7s-pZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2697" y="502"/>
+            <point key="canvasLocation" x="2695" y="528"/>
         </scene>
         <!--Locations-->
         <scene sceneID="bh6-Py-XgZ">
@@ -311,7 +369,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="az1-2O-rSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4297" y="502"/>
+            <point key="canvasLocation" x="4295" y="528"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="ErK-bs-k5j">
@@ -341,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGg-ha-NTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5097" y="501"/>
+            <point key="canvasLocation" x="5095" y="528"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Efk-S3-bY3">
@@ -357,7 +415,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7Z-Rd-Bwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3489" y="502"/>
+            <point key="canvasLocation" x="3487" y="528"/>
         </scene>
         <!--Planets-->
         <scene sceneID="SeN-uY-tb9">
@@ -400,7 +458,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeM-ae-v9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1878" y="502"/>
+            <point key="canvasLocation" x="1878" y="528"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1U3-IT-yB2">
@@ -413,12 +471,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="183-dM-LHY"/>
+                        <segue destination="lhL-1k-ert" kind="relationship" relationship="rootViewController" id="nb2-MI-8bD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7N-9T-vJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247" y="105"/>
+            <point key="canvasLocation" x="-551" y="105"/>
         </scene>
     </scenes>
     <resources>
