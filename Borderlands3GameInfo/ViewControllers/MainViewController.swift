@@ -18,16 +18,19 @@ class MainViewController: UIViewController {
         
         startVideoWebView.frame.size.height = startVideoWebView.frame.size.width/2
         getVideo(videoCode: "2hwkQTmB33k")
-        
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "start background.png")
-        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
-        self.view.insertSubview(backgroundImage, at: 0)
+        getBackgroundImage(imageName: "start background.png")
     }
     
     func getVideo(videoCode: String) {
         guard let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
             else { return }
         startVideoWebView.load(URLRequest(url: url))
+    }
+    
+    private func getBackgroundImage(imageName: String) {
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: imageName)
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
     }
 }
